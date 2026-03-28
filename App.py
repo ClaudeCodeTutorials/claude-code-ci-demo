@@ -13,3 +13,6 @@ def process_order(items, discount_percent=0):
     if discount_percent > 0:
         total = apply_discount(total, discount_percent)
     return round(total, 2)
+
+def apply_refund(total):
+    return total - total
