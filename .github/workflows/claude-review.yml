@@ -26,4 +26,4 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
-          claude -p "Review the code in app.py. Check for bugs, missing input validation, and edge cases. Be specific about line numbers." --output-format json
+          claude "Review the code in app.py. Check for bugs, missing input validation, and edge cases. Be specific about line numbers." --output-format json
